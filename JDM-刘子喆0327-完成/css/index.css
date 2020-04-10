@@ -1,0 +1,300 @@
+.box{
+    position: relative;
+}
+/* toubu头部红色一栏包含搜索框 */
+.header{
+    width: 100%;
+    height: 40px;
+    background-color: #d13743;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 111;
+}
+.header .headerBox{
+    position: relative;
+}
+.header .headerBox .logo{
+    width: 60px;
+    height: 40px;
+    background-image: url(../images/sprites.png);
+    background-size: 200px 200px;
+    background-position: 0 -109px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.header .headerBox .search{
+    width: 60px;
+    height: 40px;
+    background-image: url(../images/sprites.png);
+    background-size: 200px 200px;
+    background-position: -60px -109px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 90px;
+}
+/* sousuoluang */
+.header .headerBox form{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    padding-left: 80px;
+    padding-right: 50px;
+    margin-top: 6px;
+}
+.header .headerBox form input{
+    width: 100%;
+    height: 28px;
+    border-radius: 20px;
+    padding-left: 40px;
+}
+.header .headerBox span{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 16px;
+    color: white;
+}
+/* 轮播图 */
+/* 图片部分 */
+.loop{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+/* .loop ul{
+    width: 800%;
+}
+.loop ul:first-child li{
+    width: 12.5%;
+    float: left;
+}
+.loop ul:first-child li img{
+    width: 100%;
+    display: block;
+} */
+/* xiao小圆点 */
+/* .loop ul:last-child{
+    width: 130px;
+    height: 60px;
+    position: absolute;
+    bottom: -24%;
+    left: 30%;
+}
+.loop ul:last-child li{
+    width: 6px;
+    height: 6px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+} */
+/* daohang导航栏 */
+.nav{
+    width: 100%;
+    height: 147px;
+    padding: 0 3%;
+}
+.nav ul li{
+    width: 25%;
+    float: left;
+    margin: 8px 0;
+    text-align: center;
+}
+.nav ul li img{
+    width: 40px;
+    height: 40px;
+}
+.nav ul li p{
+    font-size: 12px;
+    color: rgb(148, 143, 143);
+    text-align: center;
+}
+/* 产品信息 */
+/* 秒杀 */
+
+.product_top{
+    width: 100%;
+    /* height: 40px; */
+    /* background-color: rgb(226, 179, 226); */
+    position: relative;
+}
+.product_top .product_a{
+    width: 20px;   
+    height: 25px;
+    position: absolute;
+}
+.product_top a img{
+    width: 100%;
+}
+.product_top .product_span{
+    margin-left: 32px;
+    line-height: 35px;
+    color: red;
+}
+.product_top .product_left{
+    float: left;
+    margin-left: 20px;
+    margin-top: 3px;
+}
+.product_top .product_right{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.product_top .ms{
+    margin-top: -3px;
+    margin-left: -5px;
+}
+.product_top .product_left .product_time{
+    background-color: #000;
+    color: white;
+    padding: 0 4px;
+}
+/* product的整体背景设置 */
+.product{
+    background-color: rgb(223, 217, 217);
+    /* margin-left: 5px;
+    margin-right: 5px; */
+}
+.product_one{
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    margin-top: 2px;
+    padding-bottom: 8px;
+    margin-left: 3px;
+    margin-right: 3px;
+    
+} 
+.product_two{
+    background-color: #ffffff;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.product_three{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+/* str_time在浮动后脱离文档流，位置会变 */
+/* 把str_time转换成行内块元素，他就回到原位了 */
+.str_time{
+    display: inline-block;
+}
+/* 秒杀那三个电脑 */
+.main{
+    width: 100%;
+}
+.main ul li{
+    width: 33.3%;
+    /* height: 100px; */
+    /* position: relative; */
+    float: left;
+    text-align: center
+}
+.main ul li div{
+    width: 100%;
+    /* position: absolute; */
+}
+.main ul li div img{
+    width: 70%;
+}
+.main ul li p:nth-of-type(1){
+    /* position: absolute; */
+    color: #ff0000;
+    /* bottom: -7px;
+    left: 22px; */
+}
+.main ul li div{
+    border-right: 1px dashed #cccccc;
+}
+/* diyige第一个超值购的内容 */
+.product_two .shoptitle p{
+    margin-top: 3px;
+    font-size: 16px;
+    /* background-color: red; */
+    padding-top: 4px;
+}
+.product_two .shoptitle p::before{
+    content: "";
+    width: 1px;
+    height: 8px;
+    display: inline-block;
+    margin-left: 21px;
+    margin-right: 10px;
+    border: 1.5px solid red;
+    background-color: red;
+}
+.product_two .shopcon{
+    border-top: 1px solid #ccc;
+    margin-top: 8px;
+}
+.product_two .shopcon div:nth-of-type(1){
+    width: 50%;
+    border-right: 1px solid #ccc;
+}
+.product_two .shopcon div:nth-of-type(1) img{
+    width: 100%;
+}
+.product_two .shopcon div:nth-of-type(2){
+    width: 50%;
+    border-bottom: 1px solid #ccc;
+
+}
+.product_two .shopcon div:nth-of-type(2) img{
+    width: 100%;
+}
+.product_two .shopcon div:nth-of-type(3){
+    width: 50%;
+}
+.product_two .shopcon div:nth-of-type(3) img{
+    width: 100%;
+}
+.product_two .shopcon div{
+    float: left;
+}
+/* dierge第二个超值购 */
+.product_three .shoptitle p{
+    margin-top: 3px;
+    font-size: 16px;
+    background-color: #ffffff;
+    padding: 4px;
+}
+.product_three .shoptitle p::before{
+    content: "";
+    width: 1px;
+    height: 8px;
+    display: inline-block;
+    margin-left: 21px;
+    margin-right: 10px;
+    border: 1.5px solid red;
+    background-color: red;
+}
+.product_three .shopcon{
+    /* border-top: 1px solid #ccc; */
+    margin-top: 5px;
+} 
+.product_three .shopcon div:nth-of-type(1){
+    width: 50%;
+}
+.product_three .shopcon div:nth-of-type(1) img{
+    width: 100%;
+}
+.product_three .shopcon div:nth-of-type(2){
+    width: 50%;
+}
+.product_three .shopcon div:nth-of-type(2) img{
+    width: 100%;
+}
+.product_three .shopcon div:nth-of-type(3){
+    width: 50%;
+}
+.product_three .shopcon div:nth-of-type(3) img{
+    width: 100%;
+    margin-top: -3px;
+}
+.product_three .shopcon div{
+    float: right;
+}
